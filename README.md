@@ -22,3 +22,13 @@ port = '/dev/tty{},115200'.format(tty)
 in clinet.py file
 
 
+## Usage
+for push a file to device use this command (3 is COM port)
+```cmd
+python client.py 3 push /local/path/in/your/pc /device/path/file
+```
+
+for get a file from device use this command (3 is COM port)
+```cmd
+python client.py 3 pull  /device/path/file /local/path/in/your/pc
+```
